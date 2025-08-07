@@ -1,0 +1,96 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="./styles.css"
+  </head>
+
+  <body>
+    <header id="header">
+      <nav id="nav-bar">
+        <a class="nav-link" href="#home">Home</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#services">Services</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </nav>
+      <img id="header-img" src="" alt="Logo" />
+    </header>
+
+    <section id="home"><h2>Home</h2></section>
+    <section id="about"><h2>About</h2></section>
+    <section id="services"><h2>Services</h2></section>
+    <section id="contact"><h2>Contact</h2></section>
+    <section id="footer"><h2>Footer</h2></section>
+
+    <video id="video" src="" controls></video>
+
+    <form action="https://www.freecodecamp.com/email-submit" id="form">
+      <input 
+        id="email" 
+        placeholder="Enter your email" 
+        type="email"
+        name="email" 
+        required
+      />
+      <input 
+        id="submit"
+        type="submit"
+        value="Submit"
+      />
+    </form>
+  </body>
+</html>
+
+
+** end of index.html **
+
+** start of styles.css **
+
+
+
+/* styles.css */
+
+/* ✅ Flexbox for nav-bar (Test 25) */
+#nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  padding: 1rem;
+  z-index: 999;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+body {
+  padding-top: 80px;
+  font-family: sans-serif;
+}
+
+/* ✅ Media query (Test 24) */
+@media (max-width: 600px) {
+  .nav-link {
+    display: block;
+    margin: 0.5rem 0;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+}
+
+
+** end of styles.css **
+
